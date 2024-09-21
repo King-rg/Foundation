@@ -6,7 +6,7 @@ async def get_signal(clk, signal):
     return signal.value
 
 @cocotb.test()
-async def main_tb_test(dut):
+async def full_adder_4b_tb(dut):
     """Test the 4-bit ripple-carry adder"""
     
     # Define test cases: tuples of (a, b, cin, expected_sum, expected_cout)

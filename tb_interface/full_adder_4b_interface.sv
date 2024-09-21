@@ -1,4 +1,4 @@
-module main_tb;
+module full_adder_4b_interface;
 
     // Declare inputs to the full adder as reg types
     logic [3:0] a, b;   // 4-bit input A and B

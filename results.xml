@@ -1,6 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1725691322" />
-    <testcase name="main_tb_test" classname="main" file="/home/dandisk/Foundation/main.py" lineno="8" time="0.0006198883056640625" sim_time_ns="45.001" ratio_time="72595.33627076923" />
-  </testsuite>
-</testsuites>
