@@ -1,5 +1,6 @@
 import cocotb
 from cocotb.triggers import RisingEdge, FallingEdge
+from cocotb.clock import Clock
 
 async def get_signal(clk, signal):
     await RisingEdge(clk)
@@ -9,6 +10,10 @@ async def get_signal(clk, signal):
 async def full_adder_4b_tb(dut):
     """Test the 4-bit ripple-carry adder"""
     
+    # Start the clock
+    clock = Clock(dut.clk, 10, units="ns")
+    cocotb.start_soon(clock.start())
+
     # Define test cases: tuples of (a, b, cin, expected_sum, expected_cout)
     test_cases = [
         (0b0001, 0b0010, 0, 0b0011, 0),

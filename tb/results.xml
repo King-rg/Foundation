@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1725776807" />
-    <testcase name="full_adder_4b_tb" classname="full_adder_4b_tb" file="/home/dandisk/Foundation/tb/full_adder_4b_tb.py" lineno="8" time="0.0008382797241210938" sim_time_ns="45.001" ratio_time="53682.5581069397" />
+    <property name="random_seed" value="1726879624" />
+    <testcase name="dual_port_ram_tb" classname="dual_port_RAM_tb" file="/home/dandisk/Foundation/tb/dual_port_RAM_tb.py" lineno="35" time="0.004792690277099609" sim_time_ns="730.001" ratio_time="152315.4966821212" />
   </testsuite>
 </testsuites>

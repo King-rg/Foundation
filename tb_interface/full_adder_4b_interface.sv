@@ -11,12 +11,6 @@ module full_adder_4b_interface;
     logic c1, c2, c3;   // Intermediate carry signals
     logic clk;          // Clock signal
 
-    // Clock generation: Toggle clock every 5 time units (10ns period)
-    initial begin
-        clk = 0;
-        forever #5 clk = ~clk;
-    end
-
     // Instantiate the 4 full adders to form a 4-bit adder
     full_adder fa0 (
         .a(a[0]),
